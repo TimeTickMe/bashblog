@@ -20,21 +20,21 @@ global_variables() {
     global_software_version="2.4"
 
     # Blog title
-    global_title="My fancy blog"
+    global_title="TimeTick"
     # The typical subtitle for each blog
-    global_description="A blog about turtles and carrots"
+    global_description="Ticking away the moments that make up a dull day..."
     # The public base URL for this blog
-    global_url="http://example.com/blog"
+    global_url="http://timetick.cn"
 
     # Your name
-    global_author="John Smith"
+    global_author="TimeTick"
     # You can use twitter or facebook or anything for global_author_url
-    global_author_url="http://twitter.com/example" 
+    global_author_url="http://timetick.cn" 
     # Your email
-    global_email="john@smith.com"
+    global_email=""
 
     # CC by-nc-nd is a good starting point, you can change this to "&copy;" for Copyright
-    global_license="CC by-nc-nd"
+    global_license="2016 TimeTick"
 
     # If you have a Google Analytics ID (UA-XXXXX) and wish to use the standard
     # embedding code, put it on global_analytics
@@ -101,13 +101,13 @@ global_variables() {
     # "Comments?" (used in twitter link after every post)
     template_comments="Comments?"
     # "Read more..." (link under cut article on index page)
-    template_read_more="Read more..."
+    template_read_more="...阅读全部..."
     # "View more posts" (used on bottom of index page as link to archive)
-    template_archive="View more posts"
+    template_archive="更多文章"
     # "All posts" (title of archive page)
-    template_archive_title="All posts"
+    template_archive_title="所有文章"
     # "All tags"
-    template_tags_title="All tags"
+    template_tags_title="所有标签"
     # "posts" (on "All tags" page, text at the end of each tag line, like "2. Music - 15 posts")
     template_tags_posts="posts"
     # "Posts tagged" (text on a title of a page with index of one tag, like "My Blog - Posts tagged "Music"")
@@ -892,7 +892,7 @@ create_includes() {
     else 
         protected_mail="$(echo "$global_email" | sed 's/@/\&#64;/g' | sed 's/\./\&#46;/g')"
         echo '<div id="footer">'$global_license '<a href="'$global_author_url'">'$global_author'</a> &mdash; <a href="mailto:'$protected_mail'">'$protected_mail'</a><br/>' >> ".footer.html"
-        echo 'Generated with <a href="https://github.com/cfenollosa/bashblog">bashblog</a>, a single bash script to easily create blogs like this one</div>' >> ".footer.html"
+        echo 'Generated with <a href="https://github.com/cfenollosa/bashblog">BashBlog</a>, host by Github</div>' >> ".footer.html"
     fi
 }
 
