@@ -31,10 +31,10 @@ global_variables() {
     # You can use twitter or facebook or anything for global_author_url
     global_author_url="http://timetick.cn" 
     # Your email
-    global_email=""
+    global_email="songspub#outlook.com"
 
     # CC by-nc-nd is a good starting point, you can change this to "&copy;" for Copyright
-    global_license="2016 TimeTick"
+    global_license="2016 "
 
     # If you have a Google Analytics ID (UA-XXXXX) and wish to use the standard
     # embedding code, put it on global_analytics
@@ -109,11 +109,11 @@ global_variables() {
     # "All tags"
     template_tags_title="所有标签"
     # "posts" (on "All tags" page, text at the end of each tag line, like "2. Music - 15 posts")
-    template_tags_posts="posts"
+    template_tags_posts="文章"
     # "Posts tagged" (text on a title of a page with index of one tag, like "My Blog - Posts tagged "Music"")
-    template_tag_title="Posts tagged"
+    template_tag_title="文章标签"
     # "Tags:" (beginning of line in HTML file with list of all tags for this article)
-    template_tags_line_header="Tags:"
+    template_tags_line_header="标签:"
     # "Back to the index page" (used on archive page, it is link to blog index)
     template_archive_index_page="Back to the index page"
     # "Subscribe" (used on bottom of index page, it is link to RSS feed)
@@ -892,7 +892,7 @@ create_includes() {
     else 
         protected_mail="$(echo "$global_email" | sed 's/@/\&#64;/g' | sed 's/\./\&#46;/g')"
         echo '<div id="footer">'$global_license '<a href="'$global_author_url'">'$global_author'</a> &mdash; <a href="mailto:'$protected_mail'">'$protected_mail'</a><br/>' >> ".footer.html"
-        echo 'Generated with <a href="https://github.com/cfenollosa/bashblog">BashBlog</a>, host by Github</div>' >> ".footer.html"
+        echo 'Generated with <a href="https://github.com/cfenollosa/bashblog">BashBlog</a>, host by <a href="https://github.com">Github</a></div>' >> ".footer.html"
     fi
 }
 
