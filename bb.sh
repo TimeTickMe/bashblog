@@ -22,7 +22,7 @@ global_variables() {
     # Blog title
     global_title="TimeTick"
     # The typical subtitle for each blog
-    global_description="Ticking away the moments that make up a dull day..."
+    global_description="Ticking away the moments that make up a dull day,You fritter and waste the hours in an off hand way."
     # The public base URL for this blog
     global_url="http://timetick.cn"
 
@@ -117,7 +117,7 @@ global_variables() {
     # "Back to the index page" (used on archive page, it is link to blog index)
     template_archive_index_page="Back to the index page"
     # "Subscribe" (used on bottom of index page, it is link to RSS feed)
-    template_subscribe="Subscribe"
+    template_subscribe="RSS"
     # "Subscribe to this page..." (used as text for browser feed button that is embedded to html)
     template_subscribe_browser_button="Subscribe to this page..."
     # "Tweet" (used as twitter text button for posting to twitter)
